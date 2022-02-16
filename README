@@ -1,3 +1,4 @@
+The code is available in "master" branch
 Clone the project from the project URL
 Import the project in any of the IDE such as Eclipse
 Run the test by right clicking on the calculate.feature(src/test/resources) Run As cucumber feature
