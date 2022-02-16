@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="3" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="9" time="46.023">
+    <testcase classname="To test the simplified calculator" name="Check the division functionality" time="6.643">
+        <system-out>
+            <![CDATA[Given browser is open.......................................................passed
+And user is on simplified calculator page...................................passed
+When user enters a number "5" in the first edit box.........................passed
+And user enters a number "5" in the second edit box.........................passed
+And user chose the "divide" operator........................................passed
+And user hits on Calculate..................................................passed
+Then Validating the division of "5" and "5" should appear in the Answer.....passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="To test the simplified calculator" name="Check the division functionality 2" time="5.136">
+        <system-out>
+            <![CDATA[Given browser is open.......................................................passed
+And user is on simplified calculator page...................................passed
+When user enters a number "-5" in the first edit box........................passed
+And user enters a number "-5" in the second edit box........................passed
+And user chose the "divide" operator........................................passed
+And user hits on Calculate..................................................passed
+Then Validating the division of "-5" and "-5" should appear in the Answer...passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="To test the simplified calculator" name="Check the division functionality 3" time="5.161">
+        <system-out>
+            <![CDATA[Given browser is open.......................................................passed
+And user is on simplified calculator page...................................passed
+When user enters a number "5" in the first edit box.........................passed
+And user enters a number "-5" in the second edit box........................passed
+And user chose the "divide" operator........................................passed
+And user hits on Calculate..................................................passed
+Then Validating the division of "5" and "-5" should appear in the Answer....passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="To test the simplified calculator" name="Check the division functionality 4" time="4.347">
+        <failure message="Division is incorrect" type="java.lang.AssertionError">
+            <![CDATA[Given browser is open.......................................................passed
+And user is on simplified calculator page...................................passed
+When user enters a number "2.5" in the first edit box.......................passed
+And user enters a number "5.5" in the second edit box.......................passed
+And user chose the "divide" operator........................................passed
+And user hits on Calculate..................................................passed
+Then Validating the division of "2.5" and "5.5" should appear in the Answer.failed
+
+StackTrace:
+java.lang.AssertionError: Division is incorrect
+	at org.junit.Assert.fail(Assert.java:89)
+	at StepDefinitions.CalulateSteps.validating_the_division_of_and_should_appear_in_the_answer(CalulateSteps.java:265)
+	at ✽.Validating the division of "2.5" and "5.5" should appear in the Answer(file:///C:/Users/Aparna/eclipse-workspace/Calculator/src/test/resources/Features/calculate.feature:73)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="To test the simplified calculator" name="Check the division functionality 5" time="5.125">
+        <system-out>
+            <![CDATA[Given browser is open.......................................................passed
+And user is on simplified calculator page...................................passed
+When user enters a number "@" in the first edit box.........................passed
+And user enters a number "}" in the second edit box.........................passed
+And user chose the "divide" operator........................................passed
+And user hits on Calculate..................................................passed
+Then Validating the division of "@" and "}" should appear in the Answer.....passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="To test the simplified calculator" name="Check the division functionality 6" time="5.197">
+        <system-out>
+            <![CDATA[Given browser is open.......................................................passed
+And user is on simplified calculator page...................................passed
+When user enters a number "abc" in the first edit box.......................passed
+And user enters a number "gtf" in the second edit box.......................passed
+And user chose the "divide" operator........................................passed
+And user hits on Calculate..................................................passed
+Then Validating the division of "abc" and "gtf" should appear in the Answer.passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="To test the simplified calculator" name="Check the division functionality 7" time="4.409">
+        <failure message="Application does not show expected ERR message" type="java.lang.AssertionError">
+            <![CDATA[Given browser is open.......................................................passed
+And user is on simplified calculator page...................................passed
+When user enters a number "5" in the first edit box.........................passed
+And user enters a number "0" in the second edit box.........................passed
+And user chose the "divide" operator........................................passed
+And user hits on Calculate..................................................passed
+Then Validating the division of "5" and "0" should appear in the Answer.....failed
+
+StackTrace:
+java.lang.AssertionError: Application does not show expected ERR message
+	at org.junit.Assert.fail(Assert.java:89)
+	at StepDefinitions.CalulateSteps.ERRMethod(CalulateSteps.java:317)
+	at StepDefinitions.CalulateSteps.validating_the_division_of_and_should_appear_in_the_answer(CalulateSteps.java:296)
+	at ✽.Validating the division of "5" and "0" should appear in the Answer(file:///C:/Users/Aparna/eclipse-workspace/Calculator/src/test/resources/Features/calculate.feature:73)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="To test the simplified calculator" name="Check the division functionality 8" time="4.457">
+        <failure message="As value is showing as '-0', its incorrect" type="java.lang.AssertionError">
+            <![CDATA[Given browser is open.......................................................passed
+And user is on simplified calculator page...................................passed
+When user enters a number "0" in the first edit box.........................passed
+And user enters a number "-2" in the second edit box........................passed
+And user chose the "divide" operator........................................passed
+And user hits on Calculate..................................................passed
+Then Validating the division of "0" and "-2" should appear in the Answer....failed
+
+StackTrace:
+java.lang.AssertionError: As value is showing as '-0', its incorrect
+	at org.junit.Assert.fail(Assert.java:89)
+	at StepDefinitions.CalulateSteps.validating_the_division_of_and_should_appear_in_the_answer(CalulateSteps.java:253)
+	at ✽.Validating the division of "0" and "-2" should appear in the Answer(file:///C:/Users/Aparna/eclipse-workspace/Calculator/src/test/resources/Features/calculate.feature:73)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="To test the simplified calculator" name="Check the division functionality 9" time="5.296">
+        <system-out>
+            <![CDATA[Given browser is open.......................................................passed
+And user is on simplified calculator page...................................passed
+When user enters a number "" in the first edit box..........................passed
+And user enters a number "" in the second edit box..........................passed
+And user chose the "divide" operator........................................passed
+And user hits on Calculate..................................................passed
+Then Validating the division of "" and "" should appear in the Answer.......passed
+]]>
+        </system-out>
+    </testcase>
+</testsuite>

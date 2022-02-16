@@ -19,7 +19,6 @@ public class CalulateSteps {
 		
 		System.setProperty("WebDriver.chrome.driver",Projpath+"/src/test/resources/drivers/chromedriver.exe");
 		driver = new ChromeDriver();
-		
 	}
 
 	@And("user is on simplified calculator page")
@@ -66,125 +65,207 @@ public class CalulateSteps {
 	public void sum_of_and_should_appear_in_the_answer_as_result(String val1, String val2) {
 		String Val = driver.findElement(By.id("answer")).getText();
 		System.out.println(Val);
+		if(Val.equals("-0")) {
+			Assert.fail("As value is showing as '-0', its incorrect");
+			driver.quit();
+		}
+		else if(val1.contains(".") || val2.contains("."))  {
+			try {
+				double num1 = Double.parseDouble(val1);
+				double num2 = Double.parseDouble(val2);
+				double ActResult = Double.parseDouble(Val);
+				double ExpResults = num1 + num2;
+				if(ActResult == ExpResults) {
+					Assert.assertTrue("Sum is correct", true);
+				}
+				else {
+					Assert.fail("Sum is incorrect, Result shows only six decimal points");
+					driver.quit();
+				}
+			}
+			catch(Exception e) {
+				ERRMethod(Val);
+				driver.quit();
+			}
+			driver.quit();
+		}
+		else {
 		try {
 			Integer num1 = Integer.parseInt(val1);
 			Integer num2 = Integer.parseInt(val2);
 			Integer ActResult = Integer.parseInt(Val);
 			Integer ExpResults = num1 + num2;
 			if(ActResult == ExpResults) {
-				System.out.println("Pass");
+				Assert.assertTrue("Sum is correct", true);
 			}
 			else {
-				System.out.println("Fail");
+				Assert.fail("Sum is incorrect");
+				driver.quit();
 			}
 		}
 		catch(Exception e) {
-			String ExpResults = "ERR";
-			if(Val.equals(ExpResults)) {
-				System.out.println("Pass");
-			}
-			else {
-				System.out.println("Fail");
-			}
+			ERRMethod(Val);
+			driver.quit();
 		}
 
 		driver.close();
 		driver.quit();
 	}
+	}
 
 	@Then("Validating the multiplication of {string} and {string} should appear in the Answer")
 	public void validating_the_multiplication_of_and_should_appear_in_the_answer(String NumMulti1, String NumMulti2) {
 		String Val = driver.findElement(By.id("answer")).getText();
-		if(Val.equals("-0")) {
-			System.out.println("Fail");
-			Assert.fail("As value");
-		}
 		System.out.println(Val);
+		if(Val.equals("-0")) {
+			Assert.fail("As value is showing as '-0', its incorrect");
+		}
+		else if(NumMulti1.contains(".") || NumMulti2.contains("."))  {
+			try {
+				double num1 = Double.parseDouble(NumMulti1);
+				double num2 = Double.parseDouble(NumMulti2);
+				double ActResult = Double.parseDouble(Val);
+				double ExpResults = num1 * num2;
+				if(ActResult == ExpResults) {
+					Assert.assertTrue("Multiplication is correct", true);
+				}
+				else {
+					Assert.fail("Multiplication is incorrect, Result shows only six decimal points");
+					driver.quit();
+				}
+			}
+			catch(Exception e) {
+				ERRMethod(Val);
+				driver.quit();
+			}
+			driver.quit();
+		}
+		else {
 		try {
 			Integer num1 = Integer.parseInt(NumMulti1);
 			Integer num2 = Integer.parseInt(NumMulti2);
 			Integer ActResult = Integer.parseInt(Val);
 			Integer ExpResults = num1 * num2;
 			if(ActResult == ExpResults) {
-				System.out.println("Pass");
-				Assert.assertTrue("", true);
+				Assert.assertTrue("Multiplication is correct", true);
 			}
 			else {
-				System.out.println("Fail");
+				Assert.fail("Multiplication is incorrect");
+				driver.quit();
 			}
 		}
 		catch(Exception e) {
-			String ExpResults = "ERR";
-			if(Val.equals(ExpResults)) {
-				System.out.println("Pass");
-			}
-			else {
-				System.out.println("Fail");
-			}
+			ERRMethod(Val);
+			driver.quit();
 		}
-
-		driver.close();
 		driver.quit();
+	}
 	}
 	
 	@Then("Validating the subtraction of {string} and {string} should appear in the Answer")
 	public void validating_the_subtraction_of_and_should_appear_in_the_answer(String NumSub1, String NumSub2) {
 		String Val = driver.findElement(By.id("answer")).getText();
 		System.out.println(Val);
+		if(Val.equals("-0")) {
+			Assert.fail("As value is showing as '-0', its incorrect");
+		}
+		else if(NumSub1.contains(".") || NumSub2.contains("."))  {
+			try {
+				double num1 = Double.parseDouble(NumSub1);
+				double num2 = Double.parseDouble(NumSub2);
+				double ActResult = Double.parseDouble(Val);
+				double ExpResults = num1 - num2;
+				if(ActResult == ExpResults) {
+					Assert.assertTrue("Subtraction is correct", true);
+				}
+				else {
+					Assert.fail("Subtraction is incorrect, Result shows only six decimal points");
+					driver.quit();
+				}
+			}
+			catch(Exception e) {
+				ERRMethod(Val);
+				driver.quit();
+			}
+			driver.quit();
+		}
+		else {
 		try {
 			Integer num1 = Integer.parseInt(NumSub1);
 			Integer num2 = Integer.parseInt(NumSub2);
 			Integer ActResult = Integer.parseInt(Val);
 			Integer ExpResults = num1 - num2;
 			if(ActResult == ExpResults) {
-				System.out.println("Pass");
+				Assert.assertTrue("Subtraction is incorrect", true);
 			}
 			else {
-				System.out.println("Fail");
+				Assert.fail("Subtraction is incorrect");
+				driver.quit();
 			}
 		}
 		catch(Exception e) {
-			String ExpResults = "ERR";
-			if(Val.equals(ExpResults)) {
-				System.out.println("Pass");
-			}
-			else {
-				System.out.println("Fail");
-			}
+			ERRMethod(Val);
+			driver.quit();
 		}
-
-		driver.close();
 		driver.quit();
 	}
-	
+	}
 	@Then("Validating the division of {string} and {string} should appear in the Answer")
 	public void validating_the_division_of_and_should_appear_in_the_answer(String NumDiv1, String NumDiv2) {
 		String Val = driver.findElement(By.id("answer")).getText();
 		System.out.println(Val);
+		if(Val.equals("-0")) {
+			Assert.fail("As value is showing as '-0', its incorrect");
+		}
+		else if(NumDiv1.contains(".") || NumDiv2.contains("."))  {
+			try {
+				double num1 = Double.parseDouble(NumDiv1);
+				double num2 = Double.parseDouble(NumDiv2);
+				double ActResult = Double.parseDouble(Val);
+				double ExpResults = num1 / num2;
+				if(ActResult == ExpResults) {
+					Assert.assertTrue("Division is correct", true);
+				}
+				else {
+					Assert.fail("Division is incorrect, Result shows only six decimal points");
+					driver.quit();
+				}
+			}
+			catch(Exception e) {
+				ERRMethod(Val);
+				driver.quit();
+			}
+			driver.quit();
+		}
+		else {
 		try {
 			Integer num1 = Integer.parseInt(NumDiv1);
 			Integer num2 = Integer.parseInt(NumDiv2);
 			Integer ActResult = Integer.parseInt(Val);
 			Integer ExpResults = num1 / num2;
 			if(ActResult == ExpResults) {
-				System.out.println("Pass");
+				Assert.assertTrue("Division is incorrect", true);
 			}
 			else {
-				System.out.println("Fail");
+				Assert.fail("Division is incorrect");
+				driver.quit();
 			}
 		}
 		catch(Exception e) {
-			String ExpResults = "ERR";
-			if(Val.equals(ExpResults)) {
-				System.out.println("Pass");
-			}
-			else {
-				System.out.println("Fail");
-			}
+			ERRMethod(Val);
+			driver.quit();
 		}
-
-		driver.close();
 		driver.quit();
 	}
 	
+	}
+	public static void ERRMethod(String value) {
+		String ExpResults = "ERR";
+		if(value.equals(ExpResults)) {
+			Assert.assertTrue("Application shows expected ERR message", true);
+		}
+		else {
+			Assert.fail("Application does not show expected ERR message");
+		}
+	}
 }
