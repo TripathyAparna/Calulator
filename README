@@ -1,0 +1,5 @@
+Clone the project from the project URL
+Import the project in any of the IDE such as Eclipse
+Run the test by right clicking on the calculate.feature(src/test/resources) Run As cucumber feature
+You can also run by right clicking on TestRunner file(src/test/java/StepDefinitions) Run As JUnit Test
+Report will be generated in target\cucumber-reports\cucumber.xml file
