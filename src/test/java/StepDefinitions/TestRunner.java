@@ -8,8 +8,7 @@ import io.cucumber.junit.CucumberOptions;
 @CucumberOptions(
 	features= {"src/test/resources/Features/calculate.feature"},glue= {"StepDefinitions"},
 	plugin = {"junit:target/cucumber-reports/cucumber.xml"},
-	monochrome = true,
-	tags = "@division"
+	monochrome = true
 	)
 	 
 	public class TestRunner {

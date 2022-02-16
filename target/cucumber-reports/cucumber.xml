@@ -1,6 +1,252 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="3" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="9" time="46.023">
-    <testcase classname="To test the simplified calculator" name="Check the division functionality" time="6.643">
+<testsuite errors="0" failures="4" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="29" time="148.878">
+    <testcase classname="To test the simplified calculator" name="Check the addition functionality" time="6.243">
+        <system-out>
+            <![CDATA[Given browser is open.......................................................passed
+And user is on simplified calculator page...................................passed
+When user enters a number "2.5" in the first edit box.......................passed
+And user enters a number "}" in the second edit box.........................passed
+And user chose the "plus" operator..........................................passed
+And user hits on Calculate..................................................passed
+Then Validating the sum of "2.5" and "}" should appear in the Answer........passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="To test the simplified calculator" name="Check the addition functionality 2" time="5.192">
+        <system-out>
+            <![CDATA[Given browser is open.......................................................passed
+And user is on simplified calculator page...................................passed
+When user enters a number "-5" in the first edit box........................passed
+And user enters a number "-5" in the second edit box........................passed
+And user chose the "plus" operator..........................................passed
+And user hits on Calculate..................................................passed
+Then Validating the sum of "-5" and "-5" should appear in the Answer........passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="To test the simplified calculator" name="Check the addition functionality 3" time="5.035">
+        <system-out>
+            <![CDATA[Given browser is open.......................................................passed
+And user is on simplified calculator page...................................passed
+When user enters a number "2.5" in the first edit box.......................passed
+And user enters a number "5.5" in the second edit box.......................passed
+And user chose the "plus" operator..........................................passed
+And user hits on Calculate..................................................passed
+Then Validating the sum of "2.5" and "5.5" should appear in the Answer......passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="To test the simplified calculator" name="Check the addition functionality 4" time="5.214">
+        <system-out>
+            <![CDATA[Given browser is open.......................................................passed
+And user is on simplified calculator page...................................passed
+When user enters a number "@" in the first edit box.........................passed
+And user enters a number "}" in the second edit box.........................passed
+And user chose the "plus" operator..........................................passed
+And user hits on Calculate..................................................passed
+Then Validating the sum of "@" and "}" should appear in the Answer..........passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="To test the simplified calculator" name="Check the addition functionality 5" time="4.972">
+        <system-out>
+            <![CDATA[Given browser is open.......................................................passed
+And user is on simplified calculator page...................................passed
+When user enters a number "abc" in the first edit box.......................passed
+And user enters a number "gtf" in the second edit box.......................passed
+And user chose the "plus" operator..........................................passed
+And user hits on Calculate..................................................passed
+Then Validating the sum of "abc" and "gtf" should appear in the Answer......passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="To test the simplified calculator" name="Check the addition functionality 6" time="5.16">
+        <system-out>
+            <![CDATA[Given browser is open.......................................................passed
+And user is on simplified calculator page...................................passed
+When user enters a number "" in the first edit box..........................passed
+And user enters a number "" in the second edit box..........................passed
+And user chose the "plus" operator..........................................passed
+And user hits on Calculate..................................................passed
+Then Validating the sum of "" and "" should appear in the Answer............passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="To test the simplified calculator" name="Check the multiplication functionality" time="5.11">
+        <system-out>
+            <![CDATA[Given browser is open.......................................................passed
+And user is on simplified calculator page...................................passed
+When user enters a number "5" in the first edit box.........................passed
+And user enters a number "5" in the second edit box.........................passed
+And user chose the "times" operator.........................................passed
+And user hits on Calculate..................................................passed
+Then Validating the multiplication of "5" and "5" should appear in the Answer.passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="To test the simplified calculator" name="Check the multiplication functionality 2" time="5.248">
+        <system-out>
+            <![CDATA[Given browser is open.......................................................passed
+And user is on simplified calculator page...................................passed
+When user enters a number "-5" in the first edit box........................passed
+And user enters a number "-5" in the second edit box........................passed
+And user chose the "times" operator.........................................passed
+And user hits on Calculate..................................................passed
+Then Validating the multiplication of "-5" and "-5" should appear in the Answer.passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="To test the simplified calculator" name="Check the multiplication functionality 3" time="5.149">
+        <system-out>
+            <![CDATA[Given browser is open.......................................................passed
+And user is on simplified calculator page...................................passed
+When user enters a number "2.5" in the first edit box.......................passed
+And user enters a number "-5.5" in the second edit box......................passed
+And user chose the "times" operator.........................................passed
+And user hits on Calculate..................................................passed
+Then Validating the multiplication of "2.5" and "-5.5" should appear in the Answer.passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="To test the simplified calculator" name="Check the multiplication functionality 4" time="5.285">
+        <system-out>
+            <![CDATA[Given browser is open.......................................................passed
+And user is on simplified calculator page...................................passed
+When user enters a number "@" in the first edit box.........................passed
+And user enters a number "}" in the second edit box.........................passed
+And user chose the "times" operator.........................................passed
+And user hits on Calculate..................................................passed
+Then Validating the multiplication of "@" and "}" should appear in the Answer.passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="To test the simplified calculator" name="Check the multiplication functionality 5" time="5.015">
+        <system-out>
+            <![CDATA[Given browser is open.......................................................passed
+And user is on simplified calculator page...................................passed
+When user enters a number "abc" in the first edit box.......................passed
+And user enters a number "gtf" in the second edit box.......................passed
+And user chose the "times" operator.........................................passed
+And user hits on Calculate..................................................passed
+Then Validating the multiplication of "abc" and "gtf" should appear in the Answer.passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="To test the simplified calculator" name="Check the multiplication functionality 6" time="4.438">
+        <failure message="As value is showing as '-0', its incorrect" type="java.lang.AssertionError">
+            <![CDATA[Given browser is open.......................................................passed
+And user is on simplified calculator page...................................passed
+When user enters a number "0" in the first edit box.........................passed
+And user enters a number "-2" in the second edit box........................passed
+And user chose the "times" operator.........................................passed
+And user hits on Calculate..................................................passed
+Then Validating the multiplication of "0" and "-2" should appear in the Answer.failed
+
+StackTrace:
+java.lang.AssertionError: As value is showing as '-0', its incorrect
+	at org.junit.Assert.fail(Assert.java:89)
+	at StepDefinitions.CalulateSteps.validating_the_multiplication_of_and_should_appear_in_the_answer(CalulateSteps.java:117)
+	at ✽.Validating the multiplication of "0" and "-2" should appear in the Answer(file:///C:/Users/Aparna/eclipse-workspace/Calculator/src/test/resources/Features/calculate.feature:33)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="To test the simplified calculator" name="Check the multiplication functionality 7" time="5.111">
+        <system-out>
+            <![CDATA[Given browser is open.......................................................passed
+And user is on simplified calculator page...................................passed
+When user enters a number "" in the first edit box..........................passed
+And user enters a number "" in the second edit box..........................passed
+And user chose the "times" operator.........................................passed
+And user hits on Calculate..................................................passed
+Then Validating the multiplication of "" and "" should appear in the Answer.passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="To test the simplified calculator" name="Check the subtraction functionality" time="5.158">
+        <system-out>
+            <![CDATA[Given browser is open.......................................................passed
+And user is on simplified calculator page...................................passed
+When user enters a number "5" in the first edit box.........................passed
+And user enters a number "5" in the second edit box.........................passed
+And user chose the "minus" operator.........................................passed
+And user hits on Calculate..................................................passed
+Then Validating the subtraction of "5" and "5" should appear in the Answer..passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="To test the simplified calculator" name="Check the subtraction functionality 2" time="5.15">
+        <system-out>
+            <![CDATA[Given browser is open.......................................................passed
+And user is on simplified calculator page...................................passed
+When user enters a number "-5" in the first edit box........................passed
+And user enters a number "-5" in the second edit box........................passed
+And user chose the "minus" operator.........................................passed
+And user hits on Calculate..................................................passed
+Then Validating the subtraction of "-5" and "-5" should appear in the Answer.passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="To test the simplified calculator" name="Check the subtraction functionality 3" time="5.1">
+        <system-out>
+            <![CDATA[Given browser is open.......................................................passed
+And user is on simplified calculator page...................................passed
+When user enters a number "0" in the first edit box.........................passed
+And user enters a number "-1" in the second edit box........................passed
+And user chose the "minus" operator.........................................passed
+And user hits on Calculate..................................................passed
+Then Validating the subtraction of "0" and "-1" should appear in the Answer.passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="To test the simplified calculator" name="Check the subtraction functionality 4" time="5.174">
+        <system-out>
+            <![CDATA[Given browser is open.......................................................passed
+And user is on simplified calculator page...................................passed
+When user enters a number "-2.5" in the first edit box......................passed
+And user enters a number "5.5" in the second edit box.......................passed
+And user chose the "minus" operator.........................................passed
+And user hits on Calculate..................................................passed
+Then Validating the subtraction of "-2.5" and "5.5" should appear in the Answer.passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="To test the simplified calculator" name="Check the subtraction functionality 5" time="5.053">
+        <system-out>
+            <![CDATA[Given browser is open.......................................................passed
+And user is on simplified calculator page...................................passed
+When user enters a number "@" in the first edit box.........................passed
+And user enters a number "}" in the second edit box.........................passed
+And user chose the "minus" operator.........................................passed
+And user hits on Calculate..................................................passed
+Then Validating the subtraction of "@" and "}" should appear in the Answer..passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="To test the simplified calculator" name="Check the subtraction functionality 6" time="5.192">
+        <system-out>
+            <![CDATA[Given browser is open.......................................................passed
+And user is on simplified calculator page...................................passed
+When user enters a number "abc" in the first edit box.......................passed
+And user enters a number "gtf" in the second edit box.......................passed
+And user chose the "minus" operator.........................................passed
+And user hits on Calculate..................................................passed
+Then Validating the subtraction of "abc" and "gtf" should appear in the Answer.passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="To test the simplified calculator" name="Check the subtraction functionality 7" time="5.007">
+        <system-out>
+            <![CDATA[Given browser is open.......................................................passed
+And user is on simplified calculator page...................................passed
+When user enters a number "" in the first edit box..........................passed
+And user enters a number "" in the second edit box..........................passed
+And user chose the "minus" operator.........................................passed
+And user hits on Calculate..................................................passed
+Then Validating the subtraction of "" and "" should appear in the Answer....passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="To test the simplified calculator" name="Check the division functionality" time="5.041">
         <system-out>
             <![CDATA[Given browser is open.......................................................passed
 And user is on simplified calculator page...................................passed
@@ -12,7 +258,7 @@ Then Validating the division of "5" and "5" should appear in the Answer.....pass
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="To test the simplified calculator" name="Check the division functionality 2" time="5.136">
+    <testcase classname="To test the simplified calculator" name="Check the division functionality 2" time="5.138">
         <system-out>
             <![CDATA[Given browser is open.......................................................passed
 And user is on simplified calculator page...................................passed
@@ -24,7 +270,7 @@ Then Validating the division of "-5" and "-5" should appear in the Answer...pass
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="To test the simplified calculator" name="Check the division functionality 3" time="5.161">
+    <testcase classname="To test the simplified calculator" name="Check the division functionality 3" time="5.113">
         <system-out>
             <![CDATA[Given browser is open.......................................................passed
 And user is on simplified calculator page...................................passed
@@ -36,25 +282,25 @@ Then Validating the division of "5" and "-5" should appear in the Answer....pass
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="To test the simplified calculator" name="Check the division functionality 4" time="4.347">
-        <failure message="Division is incorrect" type="java.lang.AssertionError">
+    <testcase classname="To test the simplified calculator" name="Check the division functionality 4" time="4.668">
+        <failure message="Division is incorrect, Result shows only six decimal points" type="java.lang.AssertionError">
             <![CDATA[Given browser is open.......................................................passed
 And user is on simplified calculator page...................................passed
 When user enters a number "2.5" in the first edit box.......................passed
-And user enters a number "5.5" in the second edit box.......................passed
+And user enters a number "-5.5" in the second edit box......................passed
 And user chose the "divide" operator........................................passed
 And user hits on Calculate..................................................passed
-Then Validating the division of "2.5" and "5.5" should appear in the Answer.failed
+Then Validating the division of "2.5" and "-5.5" should appear in the Answer.failed
 
 StackTrace:
-java.lang.AssertionError: Division is incorrect
+java.lang.AssertionError: Division is incorrect, Result shows only six decimal points
 	at org.junit.Assert.fail(Assert.java:89)
-	at StepDefinitions.CalulateSteps.validating_the_division_of_and_should_appear_in_the_answer(CalulateSteps.java:265)
-	at ✽.Validating the division of "2.5" and "5.5" should appear in the Answer(file:///C:/Users/Aparna/eclipse-workspace/Calculator/src/test/resources/Features/calculate.feature:73)
+	at StepDefinitions.CalulateSteps.validating_the_division_of_and_should_appear_in_the_answer(CalulateSteps.java:223)
+	at ✽.Validating the division of "2.5" and "-5.5" should appear in the Answer(file:///C:/Users/Aparna/eclipse-workspace/Calculator/src/test/resources/Features/calculate.feature:73)
 ]]>
         </failure>
     </testcase>
-    <testcase classname="To test the simplified calculator" name="Check the division functionality 5" time="5.125">
+    <testcase classname="To test the simplified calculator" name="Check the division functionality 5" time="5.58">
         <system-out>
             <![CDATA[Given browser is open.......................................................passed
 And user is on simplified calculator page...................................passed
@@ -66,7 +312,7 @@ Then Validating the division of "@" and "}" should appear in the Answer.....pass
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="To test the simplified calculator" name="Check the division functionality 6" time="5.197">
+    <testcase classname="To test the simplified calculator" name="Check the division functionality 6" time="5.226">
         <system-out>
             <![CDATA[Given browser is open.......................................................passed
 And user is on simplified calculator page...................................passed
@@ -78,7 +324,7 @@ Then Validating the division of "abc" and "gtf" should appear in the Answer.pass
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="To test the simplified calculator" name="Check the division functionality 7" time="4.409">
+    <testcase classname="To test the simplified calculator" name="Check the division functionality 7" time="4.401">
         <failure message="Application does not show expected ERR message" type="java.lang.AssertionError">
             <![CDATA[Given browser is open.......................................................passed
 And user is on simplified calculator page...................................passed
@@ -91,13 +337,13 @@ Then Validating the division of "5" and "0" should appear in the Answer.....fail
 StackTrace:
 java.lang.AssertionError: Application does not show expected ERR message
 	at org.junit.Assert.fail(Assert.java:89)
-	at StepDefinitions.CalulateSteps.ERRMethod(CalulateSteps.java:317)
-	at StepDefinitions.CalulateSteps.validating_the_division_of_and_should_appear_in_the_answer(CalulateSteps.java:296)
+	at StepDefinitions.CalulateSteps.ERRMethod(CalulateSteps.java:259)
+	at StepDefinitions.CalulateSteps.validating_the_division_of_and_should_appear_in_the_answer(CalulateSteps.java:247)
 	at ✽.Validating the division of "5" and "0" should appear in the Answer(file:///C:/Users/Aparna/eclipse-workspace/Calculator/src/test/resources/Features/calculate.feature:73)
 ]]>
         </failure>
     </testcase>
-    <testcase classname="To test the simplified calculator" name="Check the division functionality 8" time="4.457">
+    <testcase classname="To test the simplified calculator" name="Check the division functionality 8" time="4.555">
         <failure message="As value is showing as '-0', its incorrect" type="java.lang.AssertionError">
             <![CDATA[Given browser is open.......................................................passed
 And user is on simplified calculator page...................................passed
@@ -110,12 +356,12 @@ Then Validating the division of "0" and "-2" should appear in the Answer....fail
 StackTrace:
 java.lang.AssertionError: As value is showing as '-0', its incorrect
 	at org.junit.Assert.fail(Assert.java:89)
-	at StepDefinitions.CalulateSteps.validating_the_division_of_and_should_appear_in_the_answer(CalulateSteps.java:253)
+	at StepDefinitions.CalulateSteps.validating_the_division_of_and_should_appear_in_the_answer(CalulateSteps.java:210)
 	at ✽.Validating the division of "0" and "-2" should appear in the Answer(file:///C:/Users/Aparna/eclipse-workspace/Calculator/src/test/resources/Features/calculate.feature:73)
 ]]>
         </failure>
     </testcase>
-    <testcase classname="To test the simplified calculator" name="Check the division functionality 9" time="5.296">
+    <testcase classname="To test the simplified calculator" name="Check the division functionality 9" time="5.742">
         <system-out>
             <![CDATA[Given browser is open.......................................................passed
 And user is on simplified calculator page...................................passed

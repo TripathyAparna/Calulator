@@ -85,7 +85,6 @@ public class CalulateSteps {
 			}
 			catch(Exception e) {
 				ERRMethod(Val);
-				driver.quit();
 			}
 			driver.quit();
 		}
@@ -105,10 +104,7 @@ public class CalulateSteps {
 		}
 		catch(Exception e) {
 			ERRMethod(Val);
-			driver.quit();
 		}
-
-		driver.close();
 		driver.quit();
 	}
 	}
@@ -136,7 +132,6 @@ public class CalulateSteps {
 			}
 			catch(Exception e) {
 				ERRMethod(Val);
-				driver.quit();
 			}
 			driver.quit();
 		}
@@ -156,7 +151,6 @@ public class CalulateSteps {
 		}
 		catch(Exception e) {
 			ERRMethod(Val);
-			driver.quit();
 		}
 		driver.quit();
 	}
@@ -185,7 +179,6 @@ public class CalulateSteps {
 			}
 			catch(Exception e) {
 				ERRMethod(Val);
-				driver.quit();
 			}
 			driver.quit();
 		}
@@ -205,7 +198,6 @@ public class CalulateSteps {
 		}
 		catch(Exception e) {
 			ERRMethod(Val);
-			driver.quit();
 		}
 		driver.quit();
 	}
@@ -216,6 +208,7 @@ public class CalulateSteps {
 		System.out.println(Val);
 		if(Val.equals("-0")) {
 			Assert.fail("As value is showing as '-0', its incorrect");
+			driver.quit();
 		}
 		else if(NumDiv1.contains(".") || NumDiv2.contains("."))  {
 			try {
@@ -233,7 +226,6 @@ public class CalulateSteps {
 			}
 			catch(Exception e) {
 				ERRMethod(Val);
-				driver.quit();
 			}
 			driver.quit();
 		}
@@ -253,7 +245,6 @@ public class CalulateSteps {
 		}
 		catch(Exception e) {
 			ERRMethod(Val);
-			driver.quit();
 		}
 		driver.quit();
 	}

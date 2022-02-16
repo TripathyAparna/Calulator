@@ -36,7 +36,7 @@ Feature: To test the simplified calculator
       | value1 | value2 |
       |    5   |   5    |
       |   -5   |  -5    |
-      |   2.5  |  5.5   |
+      |   2.5  |  -5.5  |
 			|    @   |   }    |
 			|    abc |   gtf  |
 			|    0	 |  -2    |
@@ -57,7 +57,7 @@ Feature: To test the simplified calculator
       |    5   |   5    |
       |   -5   |  -5    |
       |    0   |  -1		|
-      |   2.5  |  5.5   |
+      |   -2.5 |  5.5   |
 			|    @   |   }    |
 			|    abc |   gtf  |	
 			|        |        |	
@@ -77,7 +77,7 @@ Feature: To test the simplified calculator
       |    5   |   5    |
       |   -5   |  -5    |
       |    5   |  -5    |
-      |   2.5  |  5.5   |
+      |   2.5  |  -5.5  |
  	  	|    @   |   }    |
  			|    abc |   gtf  |	
  			|    5   |   0    |
