@@ -1,6 +1,21 @@
-The code is available in "master" branch
-Clone the project from the project URL
-Import the project in any of the IDE such as Eclipse
-Run the test by right clicking on the calculate.feature(src/test/resources) Run As cucumber feature
-You can also run by right clicking on TestRunner file(src/test/java/StepDefinitions) Run As JUnit Test
-Report will be generated in target\cucumber-reports\cucumber.xml file
+1- The code is available in the "master" branch
+2- Clone the project from the project URL 
+	- Open the Git Hub link
+	- Click on Code and copy the HTTPS link
+	- Open Git Bash
+	- Change the current working directory to the location where you want the cloned directory
+	- Type git clone, and then paste the URL you copied earlier
+	  $ git clone <HTTPS link>
+	- Press Enter to create your local clone
+3- Import the project in any of the IDE such as Eclipse
+	- Open Eclipse
+	- Click File > Import
+	- Type Maven in the search box under Select an import source
+	- Select Existing Maven Projects.
+	- Click Next
+	- Click Browse and select the folder that is the root of the Maven project (probably contains the pom.xml file)
+	- Click Next
+	- Click Finish
+4- Run the test by right clicking on the calculate.feature(src/test/resources) Run As cucumber feature
+5- You can also run by right clicking on TestRunner file(src/test/java/StepDefinitions) Run As JUnit Test
+6- Report will be generated in target\cucumber-reports\cucumber.xml file
